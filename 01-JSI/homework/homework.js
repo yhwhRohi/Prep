@@ -186,19 +186,37 @@ function estaEnRango(numero) {
 function esPrimo(numero) {
   // Devuelve "true" si "numero" es primo
   // De lo contrario devuelve "falso"
-  // Pista: un número primo solo es divisible por sí mismo y por 1
   // Pista 2: Puedes resolverlo usando un bucle `for`
   // Nota: Los números 0 y 1 NO son considerados números primos
   // Tu código:
 
-}
+  if(numero === 0 || numero === 1) {return false;
+    
+  }
+ 
+for (var i = 2; i < numero; i++) {
+  if (numero % i === 0) { return false;
+    
+  }
+  }
+ return true;
+ 
+} 
+  
+
 
 function doWhile(numero) {
   //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
   //Retornar el valor final.
   //Pueden usar un while o un bucle do ... while (Investigarlo si quieren hacerlo de la segunda forma)
   // Tu código:
-  
+  var i = 20;
+  while (i < 8) {
+    numero = numero + 5; i++;
+    
+  }
+  return numero;
+
 }
 
 
